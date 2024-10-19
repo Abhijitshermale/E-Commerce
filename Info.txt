@@ -1,0 +1,56 @@
+API :- http://localhost:8085/auth/
+Request : {
+    "email": "abhichandra@gmail.com",
+    "password": "Abhi@123",
+    "firstName": "Abhichandra",
+    "lastName": "Yadav",
+    "phone": 7897897894
+}
+Response :{
+    "id": 452,
+    "username": "abhichandra@gmail.com",
+    "password": "$2a$10$C3441rdSWZ835o.3Zd57rOw.yIXYGDKFcRYuMNqvlaBU.6oc71Dbi",
+    "firstName": "Abhichandra",
+    "lastName": "Yadav",
+    "email": "abhichandra@gmail.com",
+    "phone": "7897897894",
+    "enabled": true,
+    "profile": null,
+    "credentialsNonExpired": true,
+    "accountNonExpired": true,
+    "accountNonLocked": true,
+    "authorities": [
+        {
+            "authority": "NORMAL"
+        }
+    ]
+}
+
+API : http://localhost:8085/auth/login
+Request : {
+    "email": "abhichandra@gmail.com",
+    "password": "Abhi@123"
+}
+Response : {
+    "jwtToken": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmhpY2hhbmRyYUBnbWFpbC5jb20iLCJpYXQiOjE3MjkzNDU0MzAsImV4cCI6MTcyOTM1MjYzMH0.sEp6yVwhRLR7RTjucwq0DtE_tq-rpnoDjyqiDq07EbQNAlDzbEk2PftcWRNv7c7-n8fXvKS363iJ44d5E0XK1Q",
+    "user": {
+        "id": 452,
+        "username": "abhichandra@gmail.com",
+        "password": "$2a$10$C3441rdSWZ835o.3Zd57rOw.yIXYGDKFcRYuMNqvlaBU.6oc71Dbi",
+        "firstName": "Abhichandra",
+        "lastName": "Yadav",
+        "email": "abhichandra@gmail.com",
+        "phone": "7897897894",
+        "enabled": true,
+        "profile": null,
+        "credentialsNonExpired": true,
+        "accountNonExpired": true,
+        "accountNonLocked": true,
+        "authorities": [
+            {
+                "authority": "NORMAL"
+            }
+        ]
+    },
+    "refreshToken": "feed14b9-d85d-4896-889e-5c184cf1667f"
+}
